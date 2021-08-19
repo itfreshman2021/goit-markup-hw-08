@@ -1,0 +1,164 @@
+.page-footer {
+  background-color: var(--second-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.page-footer-flex { 
+  display: flex;
+}
+
+.page-footer__address {
+  font-style: normal;
+}
+.page-footer__map {
+
+  display: block;
+  margin-top: 20px;
+
+  color: var(--white-color);
+
+  text-decoration: none;
+  line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover, &:focus {
+  color: var(--accent-color);}
+}
+
+.page-footer__contact-date {
+
+  display: block;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+  line-height: 1.71;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover, &:focus {
+  color: var(--accent-color);}
+} 
+
+/*  іконки в футері  */
+
+.page-footer__social-linklist { 
+  
+  margin-left: 70px;
+  margin-top: 15px;
+}
+
+.page-footer__join { 
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+}
+
+.page-footer__social-link { 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  color: var(--white-color);
+
+  width: 44px;
+  height: 44px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+& + & { margin-left: 10px;}
+
+&:hover, &:focus { 
+  background-color: var(--accent-color);}
+
+}
+
+.page-footer__social-icon { 
+  fill: currentColor;
+}
+
+/* форма в футері */
+
+.page-footer-form { 
+
+  margin-left: 93px;
+  margin-top: 15px;
+}
+
+.page-footer__signup { 
+
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.page-footer__input-form { 
+  
+width: 358px;
+height: 50px;
+padding-left: 16px;
+
+color: var(--input-form-footer-color);
+background-color: var(--second-bg-color);
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+
+font-size: 16px;
+line-height: 1.25;
+
+&::placeholder { 
+  color: var(--input-form-footer-color);
+
+  font-size: 16px;
+  line-height: 1.25;}
+
+}
+
+.page-footer__button { 
+
+  display: inline-flex;
+  align-items: flex-start;
+  text-align: center;
+
+  min-width: 200px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 28px 10px 29px;
+  margin-left: 11px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+}
+
+.page-footer__signup-icon { 
+
+  fill: var(--white-color);
+  margin-left: 10px;
+}
