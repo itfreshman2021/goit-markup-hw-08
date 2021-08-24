@@ -1,9 +1,15 @@
 .works { 
+
+  display: none;
+
+  @media screen and (min-width: 1200px) { 
   
+  display: block;  
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 94px;}
+
 }
 
 .works__title {

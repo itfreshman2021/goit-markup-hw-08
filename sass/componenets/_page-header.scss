@@ -4,36 +4,47 @@
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #ececec;
- 
+
 }
 
 .page-header-flex {
-  display: flex;
-  align-items: center;
-}
 
-.page-header__navigation {
+   @media screen and (min-width: 1200px) {  
+  display: flex;
+  align-items: center;}
+
+}
+.page-header__navigation { 
+
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) { 
+    justify-content: space-between;
+  }
+
 }
 
 
 /* site-nav */
 
 .site-navigation {
-  display: flex;
-  margin-left: 93px;
-
+  
+  
   list-style: none;
 
-&__item:not(:first-child) {margin-left: 50px;}
+  @media screen and (max-width: 767px) {
+  display: none;}
+
+  @media screen and (min-width: 1200px) { 
+  display: flex;
+  margin-left: 93px; 
+
+&__item:not(:first-child) {margin-left: 50px;}}
 }
 
 .site-navigation__link {
 
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: var(--title-text-color);
 
@@ -44,6 +55,7 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
+ 
 &:hover, &:focus { color: var(--accent-color);}
 
 &--current {color: var(--accent-color);} 
@@ -94,26 +106,33 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms c
 &--noncurrent:focus::after { 
   opacity: 1;}
 
+ @media screen and (min-width: 1200px) {
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;}
+
 }
 
 /* contacts list */
 
 .contacts-list {
+   
+  list-style: none;
+
+  @media screen and (max-width: 767px) {
+  display: none;}
+
+  @media screen and (min-width: 1200px) {
   display: flex;
   margin-left: 305px;
 
-  list-style: none;
+&__item + &__item { margin-left: 30px;} }
 
-&__item + &__item { margin-left: 30px;}
 }
-
 .contacts-list__link {
 
-  display: flex;
-  align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  
 
   color: var(--primary-text-color);
 
@@ -125,10 +144,19 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms c
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 &:hover, &:focus {color: var(--accent-color);}
+
+ @media screen and (min-width: 1200px) {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px; }
 }
 
 .contacts-list__text { 
-  margin-left: 10px;
+
+  @media screen and (min-width: 1200px) {
+  margin-left: 10px;}
 }
 .contacts-list__icon { 
   fill: currentColor;  
