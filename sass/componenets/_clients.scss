@@ -5,7 +5,7 @@
   margin-left: auto;
   margin-right: auto;
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
      padding-top: 60px;
      padding-bottom: 60px;}
 
@@ -21,29 +21,28 @@
   color: var(--title-text-color);
 
   font-weight: bold;
-  font-size: 28px;
   line-height: 1.17;
   text-align: center;
 
-  @media screen and (max-width: 767px) {
-  margin-bottom: 30px;}
+  @media screen and (max-width: 1199px) {
+  margin-bottom: 30px;
+  font-size: 28px; }
 
   @media screen and (min-width: 1200px) { 
   margin-bottom: 50px;
-  
-  font-size: 36px;}
+  font-size: 36px; }
   
 }
 
 .clients__list { 
+
   display: flex;
-  flex-wrap: wrap;
-  
 
   list-style: none;
 
-  @media screen and (max-width: 767px) {
-    margin: -15px; }
+  @media screen and (max-width: 1199px) { 
+  flex-wrap: wrap;
+  margin: -15px; }
 }
 
 .clients__item {
@@ -66,10 +65,15 @@
 &:hover,&:focus { color: var(--accent-color);
   border-color: var(--accent-color);}
 
-  @media screen and (max-width: 767px) {
-  width: calc((100% - 2 * 30px) / 2);
+  @media screen and (max-width: 1199px) {
   height: 92px;
   margin: 15px;}
+
+  @media screen and (max-width: 767px) {
+  width: calc((100% - 2 * 30px) / 2); }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  width: calc((100% - 3 * 30px) / 3); }
 
 
   @media screen and (min-width: 1200px) { 
