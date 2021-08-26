@@ -74,7 +74,7 @@
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <a href="mailto:info@devstudio.com" class="contacts-list__link">
-                <svg class="contacts-list__icon" width="16" height="12">
+                <svg class="contacts-list__icon">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 <span class="contacts-list__text">info@devstudio.com</span>
@@ -82,7 +82,7 @@
             </li>
             <li class="contacts-list__item">
               <a href="tel:+380961111111" class="contacts-list__link">
-                <svg class="contacts-list__icon" width="10" height="16">
+                <svg class="contacts-list__icon">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 <span class="contacts-list__text">+38 096 111 11 11</span>
@@ -169,9 +169,12 @@
               <div class="work-wrapper">
                 <img
                   class="works__image"
-                  src="./images/keyboard.jpg"
+                  srcset="
+                    ./images/keyboard370.jpg 1x,
+                    ./images/keyboard740.jpg 2x
+                  "
+                  src="./images/keyboard370.jpg"
                   alt="работа за клавиатурой ПК"
-                  width="370"
                 />
                 <div class="work-text-wrapper">
                   <p class="works__text">Десктопные приложения</p>
@@ -183,9 +186,12 @@
               <div class="work-wrapper">
                 <img
                   class="works__image"
-                  src="./images/mobilephone.jpg"
+                  srcset="
+                    ./images/mobilephone370.jpg 1x,
+                    ./images/mobilephone740.jpg 2x
+                  "
+                  src="./images/mobilephone370.jpg"
                   alt="работа с дизайном продукта на ПК"
-                  width="370"
                 />
                 <div class="work-text-wrapper">
                   <p class="works__text">Мобильные приложения</p>
@@ -196,9 +202,9 @@
               <div class="work-wrapper">
                 <img
                   class="works__image"
-                  src="./images/tablet.jpg"
+                  srcset="./images/tablet370.jpg 1x, ./images/tablet740.jpg 2x"
+                  src="./images/tablet370.jpg"
                   alt="работа с выбором цвета продукта на планшете"
-                  width="370"
                 />
                 <div class="work-text-wrapper">
                   <p class="works__text">Дизайнерские решения</p>
@@ -217,9 +223,12 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/productdesigner.jpg"
+                srcset="
+                  ./images/productdesigner450.jpg 1x,
+                  ./images/productdesigner900.jpg 2x
+                "
+                src="./images/productdesigner450.jpg"
                 alt="фото продакт дизайнера Игоря Демяненко"
-                width="270"
               />
               <div class="team-card-wrapper">
                 <h3 class="team__card-title">Игорь Демьяненко</h3>
@@ -268,9 +277,12 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/frontenddeveloper.jpg"
+                srcset="
+                  ./images/frontenddeveloper450.jpg 1x,
+                  ./images/frontenddeveloper900.jpg 2x
+                "
+                src="./images/frontenddeveloper450.jpg"
                 alt="фото фронтенд девелопера Ольги Репиной"
-                width="270"
               />
               <div class="team-card-wrapper">
                 <h3 class="team__card-title">Ольга Репина</h3>
@@ -319,9 +331,12 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/marketing.jpg"
+                srcset="
+                  ./images/marketing450.jpg 1x,
+                  ./images/marketing900.jpg 2x
+                "
+                src="./images/marketing450.jpg"
                 alt="фото маркетолога Николая Тарасова"
-                width="270"
               />
               <div class="team-card-wrapper">
                 <h3 class="team__card-title">Николай Тарасов</h3>
@@ -370,9 +385,12 @@
             <li class="team__item">
               <img
                 class="team__image"
-                src="./images/uidesigner.jpg"
+                srcset="
+                  ./images/uidesigner450.jpg 1x,
+                  ./images/uidesigner900.jpg 2x
+                "
+                src="./images/uidesigner450.jpg"
                 alt="фото юи дизайнера Михаила Ермакова"
-                width="270"
               />
               <div class="team-card-wrapper">
                 <h3 class="team__card-title">Михаил Ермаков</h3>
@@ -733,16 +751,24 @@
 
       <ul class="mobile-social-linklist">
         <li class="mobile-social-item">
-          <a href="" class="mobile-social-link" aria-label="Линк instagram">Instagram</a>
+          <a href="" class="mobile-social-link" aria-label="Линк instagram"
+            >Instagram</a
+          >
         </li>
         <li class="mobile-social-item">
-          <a href="" class="mobile-social-link" aria-label="Линк twitter">Twitter</a>
+          <a href="" class="mobile-social-link" aria-label="Линк twitter"
+            >Twitter</a
+          >
         </li>
         <li class="mobile-social-item">
-          <a href="" class="mobile-social-link" aria-label="Линк facebook">Facebook</a>
+          <a href="" class="mobile-social-link" aria-label="Линк facebook"
+            >Facebook</a
+          >
         </li>
         <li class="mobile-social-item">
-          <a href="" class="mobile-social-link" aria-label="Линк linkedin">LinkedIn</a>
+          <a href="" class="mobile-social-link" aria-label="Линк linkedin"
+            >LinkedIn</a
+          >
         </li>
       </ul>
     </div>
